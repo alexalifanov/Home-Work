@@ -2,11 +2,11 @@ package Task2;
 
 public class salary {
     public static void main(String[] args) {
-        int dirtysalary = 70000;
-        double VAT13 = 0.13;
-        double  VAT = dirtysalary * VAT13;
-        double  netsalary = dirtysalary - VAT;
-        System.out.println(netsalary + " RUB");
+        int dirtySalary = 70000;
+        double vat13 = 0.13;
+        double  vat = dirtySalary * vat13;
+        double  netSalary = dirtySalary - vat;
+        System.out.println(netSalary + " RUB");
     }
 }
 

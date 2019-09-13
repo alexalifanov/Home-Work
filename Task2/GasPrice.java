@@ -2,9 +2,9 @@ package Task2;
 
 public class GasPrice {
     public static void main(String[] args) {
-        int gasolineprise = 43;
-        int gasolinevolume = 50;
-        int  cash = gasolineprise * gasolinevolume;
+        int gasolinePrise = 43;
+        int gasolineVolume = 50;
+        int  cash = gasolinePrise * gasolineVolume;
         System.out.println(cash + " RUB");
     }
 }

@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class NewSalary {
     public static void main(String[] args) {
-        Scanner dirtysalary = new Scanner(System.in);
+        Scanner dirtySalary = new Scanner(System.in);
         System.out.println("Введите уровень зароботной платы");
-        int Scanner = dirtysalary.nextInt();
-        double VAT13 = 0.13;
-        double  VAT = Scanner* VAT13;
-        double  netsalary = Scanner - VAT;
-        System.out.println(netsalary + " RUB");
+        int scanner = dirtySalary.nextInt();
+        double vat13 = 0.13;
+        double  vat = scanner* vat13;
+        double  netSalary = scanner - vat;
+        System.out.println(netSalary + " RUB");
 
     }
 }
