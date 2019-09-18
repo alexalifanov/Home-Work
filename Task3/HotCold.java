@@ -12,7 +12,6 @@ public class HotCold {
         while (true) {
             System.out.println("Введите случайное чило от 1 до 100");
             int currentNumber = number.nextInt();
-
             if (currentNumber == randomNumber) {
                 System.out.println("Ты выиграл!");
                 break;
@@ -20,9 +19,10 @@ public class HotCold {
             if ((Math.abs(previousNumber - randomNumber)) > (Math.abs(currentNumber - randomNumber))) {
                 System.out.println("Горячо!");
             }
-            if ((Math.abs(previousNumber - randomNumber)) < (Math.abs(currentNumber - randomNumber))) {
+            else {
                 System.out.println("Холодно!");
             }
+            previousNumber = currentNumber;
         }
     }
 }
