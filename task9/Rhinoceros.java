@@ -1,4 +1,4 @@
-package Task9;
+package task9;
 
 public class Rhinoceros extends Animal implements Swim {
     @Override

@@ -1,4 +1,4 @@
-package Task9;
+package task9;
 
 public interface Swim {
     void swim1();

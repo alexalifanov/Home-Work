@@ -1,4 +1,4 @@
-package Task9;
+package task9;
 
 public class Giraffe extends Animal implements Swim, Jump {
     @Override

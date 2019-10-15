@@ -1,4 +1,4 @@
-package Task9.human;
+package task9.human;
 
 public class HumanMain {
     public static void main(String[] args) {
