@@ -1,4 +1,4 @@
-package Task8.Object;
+package task8.Object;
 
 public class Object {
     public static int score;

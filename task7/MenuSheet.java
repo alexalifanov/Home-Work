@@ -1,4 +1,4 @@
-package Task7;
+package task7;
 
 public enum MenuSheet {
     LAYS(100, "RUB"),

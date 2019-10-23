@@ -1,4 +1,4 @@
-package Task8.Contract;
+package task8.Contract;
 
 import java.util.Date;
 

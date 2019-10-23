@@ -1,4 +1,4 @@
-package Task8;
+package task8;
 
 class Operator {
     private static double x;

@@ -1,4 +1,4 @@
-package Task8.Object;
+package task8.Object;
 
 public class Score {
     public static void main(String[] args) {
