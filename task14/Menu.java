@@ -1,6 +1,6 @@
-package task7;
+package task14;
 
-public enum MenuSheet {
+public enum Menu {
     LAYS(100, "RUB"),
     SNICKERS(60, "RUB"),
     SKITTLES(50, "RUB"),
@@ -13,17 +13,14 @@ public enum MenuSheet {
     MILKA(115, "RUB");
     int price;
     String currency;
+    Menu(int price, String currency) {
+        this.price = price;
+        this.currency = currency;
+    }
     public int getPrice() {
         return price;
     }
     public String getCurrency() {
         return currency;
     }
-      MenuSheet(int price, String currency) {
-        this.price = price;
-        this.currency = currency;
-    }
-
 }
-
-
