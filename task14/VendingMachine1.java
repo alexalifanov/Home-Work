@@ -10,19 +10,19 @@ public class VendingMachine1 extends Logics {
     public static void main(String[] args) {
         logger.info("Начало программы");
         Menu1();
-        logger.info("Начало программы");
+        logger.info("Выбор продукта");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Внесите денежные средства согласно стоимости выбранного напитка");
         int money = scanner.nextInt();
-        logger.trace("деньги внесены");
+        logger.info("Деньги внесены");
         if (money > 0) {
             choice();
         } else {
             System.out.println("Вы не внесли деньги");
-            logger.info("!!!!");
+            logger.info("Отсутствуют средства");
         }
         process(money);
-        logger.info("Начало программы");
+        logger.info("Завершение программы");
     }
 
 }
