@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Receipt {
-    public void ReceiptOut() throws IOException{
-        File products = new File("C:\\Users\\Alexei.Alifanov\\IdeaProjects\\ru.alifanov\\src\\task19\\Products");
+    public void ReceiptOut() throws IOException {
+        File products = new File("task19\\Products");
         Scanner productsInf = new Scanner(products);
         Float amount = 0f;
-        while (productsInf.hasNext()){
+        while (productsInf.hasNext()) {
             String line = productsInf.nextLine();
             Float x = productsInf.nextFloat();
             Float y = productsInf.nextFloat();
@@ -22,7 +22,8 @@ public class Receipt {
         String total = "Итого:";
         System.out.printf("%s %40.2f", total, amount);
     }
-    public void ReceiptInf(){
+
+    public void ReceiptInf() {
         String a = "Позиция";
         String b = "Цена";
         String c = "Количество";
