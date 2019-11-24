@@ -17,9 +17,9 @@ public class CopyFile {
         writer.close();
     }
     public void Change() throws IOException{
-        File fileIn = new File("C:\\Users\\Alexei.Alifanov\\IdeaProjects\\ru.alifanov\\Trial\\real.txt");
+        File fileIn = new File("Trial\\real.txt");
         try(Writer writer = new OutputStreamWriter(new FileOutputStream(fileIn), Charset.forName("cp866"))) {
-            FileReader fileReader = new FileReader("C:\\Users\\Alexei.Alifanov\\IdeaProjects\\ru.alifanov\\Trial\\unreal.txt");
+            FileReader fileReader = new FileReader("Trial\\unreal.txt");
             int tx;
             while ((tx = fileReader.read()) != -1) {
                 writer.write(tx);
