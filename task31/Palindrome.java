@@ -13,24 +13,17 @@ public class Palindrome {
 
     private static boolean movingPalindrome(String s1) {
         for (int i = 0; i < s1.length() / 2; i++) {
-            if (i != 0) {
-                if (s1.charAt(i) != s1.charAt(s1.length() - i - 1)) {
-                    return false;
-                } else {
-                    System.out.println("you entered nothing");
-                }
+            if (s1.charAt(i) != s1.charAt(s1.length() - i - 1)) {
+                return false;
             }
         }
         return true;
     }
 
+
     private static boolean standardFunctionPalindrome(String s2) {
-        if (s2 != null) {
-            StringBuilder stringBuilder = new StringBuilder(s2);
-            stringBuilder.reverse();
-        } else {
-            System.out.println("you entered nothing");
-        }
-        return true;
+        StringBuilder stringBuilder = new StringBuilder(s2);
+        stringBuilder.reverse();
+        return stringBuilder.toString().equals(s2);
     }
 }
