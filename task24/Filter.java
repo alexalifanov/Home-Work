@@ -1,24 +1,27 @@
 package task24;
 
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Filter {
     public static void main(String[] args) {
-        LinkedHashSet<String> wordList = new LinkedHashSet<>();
-        wordList.add("папа");
-        wordList.add("мама");
-        wordList.add("бабушка");
-        wordList.add("дедушка");
-        System.out.println(wordList);
-        evenWordFilter(wordList);
+        Set<String> words = new LinkedHashSet<>();
+        words.add("foo");
+        words.add("buzz");
+        words.add("bar");
+        words.add("fork");
+        words.add("bort");
+        words.add("spoon");
+        words.add("!");
+        words.add("dude");
+        System.out.println(words);
+        removeEvenLength(words);
+        System.out.println(removeEvenLength(words));
     }
 
-    private static Set<String> evenWordFilter(Set<String> set) {
+    private static Set<String> removeEvenLength(Set<String> set) {
         set.removeIf(s -> s.length() % 2 == 0);
         for (String s : set) {
-            System.out.print(s + " ");
         }
         return set;
     }
