@@ -20,9 +20,10 @@ public class Filter {
     }
 
     private static Set<String> removeEvenLength(Set<String> set) {
-        set.removeIf(s -> s.length() % 2 == 0);
-        for (String s : set) {
+        LinkedHashSet<String> pSet = new LinkedHashSet<>(set);
+        pSet.removeIf(s -> s.length() % 2 == 0);
+        for (String s : pSet) {
         }
-        return set;
+        return pSet;
     }
 }
